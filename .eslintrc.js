@@ -1,9 +1,5 @@
 module.exports = {
-  extends: [
-    'eslint:recommended',
-    'eslint-config-prettier',
-    'plugin:jest/recommended',
-  ],
+  extends: ['eslint:recommended', 'eslint-config-prettier', 'plugin:jest/recommended'],
   parserOptions: {
     ecmaVersion: 2019,
     sourceType: 'module',
@@ -17,6 +13,7 @@ module.exports = {
   env: {
     browser: true,
     node: true,
+    es6: true,
     // 'jest/globals': true
   },
   overrides: [
